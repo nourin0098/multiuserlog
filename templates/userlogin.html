@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form style="background-color: #eaeaea;" method="post">
+        {% csrf_token %}
+    <h1 align="center">LOGIN</h1>
+        <div align="center">
+    <table style="font-weight: bolder">
+        <tr>
+            <td> Username</td>
+            <td height="50"><input type="text" required="" class="form-control" name="username"></td>
+        </tr>
+        <tr >
+            <td >Password</td>
+            <td height="50"><input type="Password" required="" class="form-control" name="password"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td height="50"><input type="submit" class="btn btn-success" name="login" value="LOGIN"></td>
+        </tr>
+    </table>
+            </div>
+    </form>
+</body>
+</html>
