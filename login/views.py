@@ -10,13 +10,10 @@ def user_login(request):
         for x in obj:
             ty = x.type
             if ty == "patient":
-                request.session['tid'] = ty
                 return render(request, 'patient.html',{'username': x.username, 'type': ty})
             elif ty == "doctor":
-                request.session['tid']=ty
                 return render(request, 'doctor.html',{'username': x.username, 'type': ty})
             elif ty == "pharmacist":
-                request.session['tid'] = ty
                 return render(request, 'pharmacist.html',{'username': x.username, 'type': ty})
     return render(request,'userlogin.html')
 
